@@ -59,6 +59,8 @@
 | assertArrayEquals | assertArrayEquals| 
 | assertAll | N/A | 
 | assertThrows | N/A |
+| assertTimeout | N/A |
+| assertTimeoutPreemptively | N/A |
 
 
 [Junit 5 Example](./junit5/src/test/java/fr/xebia/xke/assertions/AssertionsDemo.java)
