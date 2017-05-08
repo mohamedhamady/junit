@@ -4,7 +4,7 @@
 
 > Junit 4
 
- - Everything is bundled into a single jar junit4.jar
+ - Monolithic : Everything is bundled into a single jar junit4.jar
 
 > Junit 5: 
 
@@ -24,7 +24,7 @@
  
         - support running JUnit 3 and JUnit 4 written tests on the JUnit 5 platform.
  
-!["Junit 5 component diagram"](./junit5-component-diagram.svg)
+!["Junit 5 component diagram"](./junit5-component-diagram.png)
 
 ## Annotations
 
@@ -96,6 +96,11 @@
 [Junit 5 Example-1](./junit5/src/test/java/fr/xebia/xke/dependencyInjection/TestInfoDemo.java)
 [Junit 5 Example-2](./junit5/src/test/java/fr/xebia/xke/dependencyInjection/ReporterDemo.java)
 [Junit 5 Example-3](./junit5/src/test/java/fr/xebia/xke/dependencyInjection/MyMockitoTest.java)
+
+## Test Interfaces and Default Methods
+
+[Junit 5 Example-1](./junit5/src/test/java/fr/xebia/xke/interfacetests/FactoryComparableTest.java)
+[Junit 5 Example-2](./junit5/src/test/java/fr/xebia/xke/interfacetests/FactoryEqualsTest.java)
 
 ## Repeated Tests
 
