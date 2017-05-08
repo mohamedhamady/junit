@@ -105,6 +105,10 @@
                         <includes>
                             <include>**/*.java</include>
                         </includes>
+                        <properties>
+                            <includeTags>fast</includeTags>
+                            <excludeTags>integration, slow</excludeTags>
+                        </properties>
                     </configuration>
                     <dependencies>
                         <dependency>
