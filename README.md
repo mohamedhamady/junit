@@ -48,7 +48,7 @@
 | -------- | ----- |
 | fail | fail |
 | assertTrue | assertTrue |
-| assertThat | N/A |
+| N/A | assertThat |
 | assertSame | assertSame |
 | assertNull | assertNull |
 | assertNotSame | assertNotSame |
