@@ -1,12 +1,15 @@
 package fr.xebia.xke.assertions;
 
 import fr.xebia.Person;
+import fr.xebia.xke.extension.TimingExtension;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 
 import static java.time.Duration.ofMillis;
-import static java.time.Duration.ofMinutes;
+import static java.time.Duration.ofSeconds;
 import static org.junit.jupiter.api.Assertions.*;
 
+@ExtendWith(TimingExtension.class)
 public class AssertionsDemo {
 
   @Test
@@ -39,7 +42,7 @@ public class AssertionsDemo {
   @Test
   void timeoutNotExceeded() {
     // The following assertions succeeds.
-    assertTimeout(ofMinutes(2), () -> {
+    assertTimeout(ofSeconds(2), () -> {
       // Perform task that takes less than 2 minutes.
     });
   }
@@ -47,14 +50,14 @@ public class AssertionsDemo {
   @Test
   void timeoutNotExceededWithResult() {
     // The following assertions succeeds, and returns the supplied object.
-    String actualResult = assertTimeout(ofMinutes(2), () -> "a result");
+    String actualResult = assertTimeout(ofSeconds(2), () -> "a result");
     assertEquals("a result", actualResult);
   }
 
   @Test
   void timeoutNotExceededWithMethod() {
     // The following assertions invokes a method reference and returns an object.
-    String actualGreeting = assertTimeout(ofMinutes(2), AssertionsDemo::greeting);
+    String actualGreeting = assertTimeout(ofSeconds(2), AssertionsDemo::greeting);
     assertEquals("hello world!", actualGreeting);
   }
 
